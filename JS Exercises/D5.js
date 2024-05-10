@@ -189,6 +189,21 @@ console.log(justTrims);
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
+console.log("ESERCIZIO 8");
+
+const fizzOrBuzz = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    const currentElement = array[i];
+    if (currentElement.color[0] === "b") {
+      console.log("Fizz");
+    } else {
+      console.log("Buzz");
+    }
+  }
+};
+
+fizzOrBuzz(cars);
+
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
