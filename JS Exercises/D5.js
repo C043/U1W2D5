@@ -69,6 +69,9 @@ switchFirstWithLast(pets);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
+
+console.log("ESERCIZIO 5");
+
 const cars = [
   {
     brand: "Ford",
@@ -90,6 +93,50 @@ const cars = [
   },
 ];
 
+const addsLicensePlate = function (array) {
+  const alphabet = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "Z",
+  ];
+  for (let i = 0; i < array.length; i++) {
+    const currentElement = array[i];
+    const firstLicensePlate =
+      alphabet[Math.floor(Math.random() * alphabet.length)] +
+      alphabet[Math.floor(Math.random() * alphabet.length)];
+    const middleLicensePlate =
+      Math.floor(Math.random() * 9).toString() +
+      Math.floor(Math.random() * 9).toString() +
+      Math.floor(Math.random() * 9).toString();
+    const lastLicensePlate =
+      alphabet[Math.floor(Math.random() * alphabet.length)] +
+      alphabet[Math.floor(Math.random() * alphabet.length)];
+    const randomLicensePlate =
+      firstLicensePlate + middleLicensePlate + lastLicensePlate;
+    currentElement.addsLicensePlate = randomLicensePlate;
+  }
+  console.log(array);
+};
+
+addsLicensePlate(cars);
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
