@@ -30,8 +30,63 @@ main {
   margin: 2em;
 }
 
-p {
+#shop-gift-cards {
   color: white;
   background-color: orangered;
-  padding: 0.5em 0;
+  padding: 0.8em 0;
+  margin-bottom: 2em;
+}
+
+#gift-guides {
+  background-image: url("../images/bg-image.png");
+  background-size: contain;
+  margin-bottom: 2em;
+}
+
+#gift-guides h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  line-height: 2em;
+  padding-top: 1em;
+}
+
+#gift-guides h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 2em;
+}
+
+#perfect-gift {
+  background-color: white;
+  margin-bottom: 3em;
+}
+
+.sub-heading {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#perfect-gift .sub-heading {
+  font-size: 1.7em;
+  text-align: left;
+  padding: 1em 0em 1em 1em;
+  font-weight: bold;
+}
+
+#gift-images img {
+  display: inline-block;
+  height: 500px;
+  width: 400px;
+  margin: 0 1em 2em 1em;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 6px 10px 11px 6px rgba(0, 0, 0, 0.17);
+}
+
+.blue-text {
+  color: #0078b4;
+  font-size: 0.8em;
+  margin-left: 1em;
 }
