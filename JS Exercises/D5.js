@@ -230,4 +230,90 @@ printUntil32(numericArray);
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
+
+console.log("ESERCIZIO 10");
+
 const charactersArray = ["g", "n", "u", "z", "d"];
+
+const numbersOfLetters = function (array) {
+  const numbersArray = [];
+  for (let i = 0; i < array.length; i++) {
+    const currentElement = array[i];
+    switch (currentElement) {
+      case "a":
+        numbersArray.push(1);
+        break;
+      case "b":
+        numbersArray.push(2);
+        break;
+      case "c":
+        numbersArray.push(3);
+        break;
+      case "d":
+        numbersArray.push(4);
+        break;
+      case "e":
+        numbersArray.push(5);
+        break;
+      case "f":
+        numbersArray.push(6);
+        break;
+      case "g":
+        numbersArray.push(7);
+        break;
+      case "h":
+        numbersArray.push(8);
+        break;
+      case "i":
+        numbersArray.push(9);
+        break;
+      case "j":
+        numbersArray.push(10);
+        break;
+      case "k":
+        numbersArray.push(11);
+        break;
+      case "l":
+        numbersArray.push(12);
+        break;
+      case "m":
+        numbersArray.push(13);
+        break;
+      case "n":
+        numbersArray.push(14);
+        break;
+      case "o":
+        numbersArray.push(15);
+        break;
+      case "p":
+        numbersArray.push(16);
+        break;
+      case "q":
+        numbersArray.push(17);
+        break;
+      case "r":
+        numbersArray.push(18);
+        break;
+      case "s":
+        numbersArray.push(19);
+        break;
+      case "t":
+        numbersArray.push(20);
+        break;
+      case "u":
+        numbersArray.push(21);
+        break;
+      case "v":
+        numbersArray.push(22);
+        break;
+      case "z":
+        numbersArray.push(23);
+        break;
+      default:
+        break;
+    }
+  }
+  return numbersArray;
+};
+
+console.log(numbersOfLetters(charactersArray));
