@@ -47,7 +47,6 @@ const reversedOrder = function (array) {
   const reversedArray = array.reverse();
   console.log(reversedArray);
 };
-
 reversedOrder(pets);
 
 /* ESERCIZIO 4
@@ -115,6 +114,8 @@ const addsLicensePlate = function (array) {
     "R",
     "S",
     "T",
+    "U",
+    "V",
     "Z",
   ];
   for (let i = 0; i < array.length; i++) {
