@@ -41,9 +41,30 @@ alphabeticalOrder(pets);
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
+console.log("ESERCIZIO 3");
+
+const reversedOrder = function (array) {
+  const reversedArray = array.reverse();
+  console.log(reversedArray);
+};
+
+reversedOrder(pets);
+
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+
+console.log("ESERCIZIO 4");
+
+const switchFirstWithLast = function (array) {
+  const lastElement = array.pop();
+  const firstElement = array.shift();
+  array.unshift(lastElement);
+  array.push(firstElement);
+  console.log(array);
+};
+
+switchFirstWithLast(pets);
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
