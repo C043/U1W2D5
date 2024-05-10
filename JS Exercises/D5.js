@@ -131,16 +131,39 @@ const addsLicensePlate = function (array) {
       alphabet[Math.floor(Math.random() * alphabet.length)];
     const randomLicensePlate =
       firstLicensePlate + middleLicensePlate + lastLicensePlate;
-    currentElement.addsLicensePlate = randomLicensePlate;
+    currentElement.licensePlate = randomLicensePlate;
   }
   console.log(array);
 };
 
 addsLicensePlate(cars);
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+
+console.log("ESERCIZIO 6");
+
+cars.push({
+  brand: "Fiat",
+  model: "500",
+  color: "red",
+  trims: ["lounge", "sport", "dolcevita"],
+});
+
+console.log(cars);
+addsLicensePlate(cars);
+
+const removeLastTrim = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    const currentElement = array[i];
+    currentElement.trims.pop();
+  }
+};
+
+removeLastTrim(cars);
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
