@@ -82,7 +82,7 @@ main {
   margin: 0 1em 2em 1em;
   border-radius: 25px;
   object-fit: cover;
-  box-shadow: 6px 10px 11px 6px rgba(0, 0, 0, 0.17);
+  box-shadow: 10px 10px 45px -18px rgba(0, 0, 0, 0.5);
 }
 
 .blue-text {
