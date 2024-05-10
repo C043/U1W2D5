@@ -11,12 +11,17 @@ header {
 
 header img {
   width: 150px;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
 }
 
 nav {
   background-color: #232f3d;
-  padding: 1em 1%;
+  padding: 1em 2em;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
 
 nav a {
@@ -83,6 +88,10 @@ main {
   border-radius: 25px;
   object-fit: cover;
   box-shadow: 10px 10px 45px -18px rgba(0, 0, 0, 0.5);
+}
+
+.clickable:hover {
+  cursor: pointer;
 }
 
 .blue-text {
